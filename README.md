@@ -25,3 +25,18 @@ sensor speedtest_upload:
   unit_of_measurement: "Mbit"
   value_template: "{{ value_json.Upload_Mbit }}"
 ```
+
+Environment variables:
+
+* MOSQUITTO_HOST: MQTT server to connect (default: localhost)
+* MQTT_ID: Client ID (default: k77)
+* MQTT_TOPIC: MQTT topic (default: speedtest/k77)
+ 
+
+Usage:
+
+```
+docker run --rm eminguez/speedtest2mqtt
+```
+
+To override values, use `-e` docker flag.
