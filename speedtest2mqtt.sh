@@ -3,8 +3,8 @@ MQTT_HOST=${MQTT_HOST:-localhost}
 MQTT_ID=${MQTT_ID:-k77}
 MQTT_TOPIC=${MQTT_TOPIC:-speedtest/k77}
 MQTT_OPTIONS=${MQTT_OPTIONS:-"-V mqttv311"}
-MQTT_USER=${MQTT_HOST:-user}
-MQTT_PASS=${MQTT_HOST:-pass}
+MQTT_USER=${MQTT_USER:-user}
+MQTT_PASS=${MQTT_PASS:-pass}
 SPEEDTEST_OPTIONS=${SPEEDTEST_OPTIONS:-"--simple"}
 
 #sends speedtest-cli data as json to MQTT broker
