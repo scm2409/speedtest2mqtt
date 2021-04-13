@@ -1,5 +1,7 @@
 # speedtest2mqtt
 
+**DESCRIPTION OUTDATED**
+
 Pushing speedtest-cli results as json to MQTT for use in homeassistant
 
 homeassistant config:
@@ -28,7 +30,7 @@ sensor speedtest_upload:
 
 Environment variables:
 
-* MOSQUITTO_HOST: MQTT server to connect (default: localhost)
+* MQTT_HOST: MQTT server to connect (default: localhost)
 * MQTT_ID: Client ID (default: k77)
 * MQTT_TOPIC: MQTT topic (default: speedtest/k77)
 * SPEEDTEST_OPTIONS: speedtest-cli options (default: --bytes)
