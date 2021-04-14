@@ -10,5 +10,7 @@ readonly MQTT_USER=${MQTT_USER}
 readonly MQTT_PASS=${MQTT_PASS}
 readonly SPEEDTEST_OPTIONS=${SPEEDTEST_OPTIONS:-}
 
+# fixme: add retry
+
 /usr/bin/speedtest-cli --json ${SPEEDTEST_OPTIONS} | \
   /usr/bin/mosquitto_pub -h ${MQTT_HOST} -i ${MQTT_ID} -l -t ${MQTT_TOPIC} ${MQTT_OPTIONS} -u ${MQTT_USER} -P ${MQTT_PASS}
